@@ -1,0 +1,81 @@
+Argument 1: uploaded_images/
+Argument 2: alexnet
+Argument 3: dognames.txt
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:             Animal_Name_01.jpg  label:                animal name
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                  Bucket_01.jpg  label:                     bucket
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                  border collie
+
+            Animal_Name_01.jpg: 
+Real:                animal name   Classifier: brown bear, bruin, ursus arctos
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: black-footed ferret, ferret, mustela nigripes
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:         loupe, jeweler's loupe
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                  border collie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+            Animal_Name_01.jpg: 
+Real:                animal name   Classifier: brown bear, bruin, ursus arctos  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: black-footed ferret, ferret, mustela nigripes  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:         loupe, jeweler's loupe  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:  50.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+ 
+pct_match           : 0.000000
+pct_correct_dogs    : 50.000000
+pct_correct_breed   : 0.000000
+pct_correct_notdogs : 100.000000
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                        dog   Classifier: black-footed ferret, ferret, mustela nigripes
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                  border collie
+
+** Total Elapsed Runtime: 0:0:0
